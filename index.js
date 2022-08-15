@@ -23,13 +23,39 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-for (let i = 0; i < 5; i++) {
-  console.log(game(), i)
+function winOrLose(wins, loses) {
+  if (wins == loses) {
+    return "Draw!";
+  } else if (wins > loses) {
+    return "You beat the Computer!";
+   } else {
+     return "You lost!";
+   }
+
 }
 
 function game() {
-  let playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
-  let computerSelection = getComputerChoice();
-  return playRound(playerSelection, computerSelection);
+  let wins = 0;
+  let loses = 0;
+
+  for (let i = 0; i < 5; i++) {
+    if( wins == 3 || loses == 3) {
+      break;
+     } else {
+      let playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
+      let computerSelection = getComputerChoice();
+      let result = playRound(playerSelection, computerSelection);
+      console.log(playerSelection, computerSelection,  result,  i) ; 
+
+      if (result.substring(0, 8) === "You Win!"){
+        wins++;
+      } else if (result.substring(0, 9) === "You Lose!"){
+        loses++;
+      }  
+    }
+    console.log(`Wins:${wins}, Loses:${loses}`)  
+  }
+  console.log(winOrLose(wins, loses));
 }
 
+game();
