@@ -7,3 +7,4 @@ This time, I'm making it a game based on what I learned in HTML, CSS and JavaScr
 #### Progress
 
 - Start with necessary JavaScript Functions
+- Added break game when there are less chances to win already

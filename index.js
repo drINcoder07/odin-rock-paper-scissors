@@ -38,21 +38,27 @@ function game() {
   let wins = 0;
   let loses = 0;
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 1; i < 6; i++) {
     if( wins == 3 || loses == 3) {
       break;
      } else {
-      let playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
+      // if there are no chances to win :(
+      if ((6- i) < (wins - loses) || (6- i) < (loses- wins)) {
+        break;
+      }
+
+      let playerSelection = prompt("Rock, paper or scissors?").toLowerCase(); 
       let computerSelection = getComputerChoice();
       let result = playRound(playerSelection, computerSelection);
       console.log(playerSelection, computerSelection,  result,  i) ; 
 
+      // increments wins and loses
       if (result.substring(0, 8) === "You Win!"){
         wins++;
       } else if (result.substring(0, 9) === "You Lose!"){
         loses++;
       }  
-    }
+     }
     console.log(`Wins:${wins}, Loses:${loses}`)  
   }
   console.log(winOrLose(wins, loses));
