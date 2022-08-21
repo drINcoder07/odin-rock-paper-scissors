@@ -5,61 +5,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
   <title>ROCK, PAPER, SCISSORS</title>
 </head>
 <body>
-  <div class="header font-istok-web bold font-36">ROCK, PAPER, SCISSORS</div>
-  <div class="support font-indie-flower font-20">First one to win in five plays takes the game!</div>
+  <div id="header" class="header font-istok-web fw-bold fs-large">ROCK, PAPER, SCISSORS</div>
+  <div id="support" class="support font-indie-flower fs-small">First one to win in five plays takes the game!</div>
 
   <div class="container">
 
-    <div class="player">
-      <div class="head font-istok-web font-36">YOU</div>
-      <div class="btn-player">
-        <div class="btn btn-Rock-player"><img src="/images/icons8-fist-96.png" alt="Fist icon"></div>
-        <div class="btn btn-Paper-player"><img src="/images/icons8-hand-96.png" alt="Hand icon" srcset=""></div>
-        <div class="btn btn-Scissors-player"><img src="/images/icons8-hand-peace-skin-type-1-96.png" alt="Hand Peace Icon"></div>
+    <div id="player" class="game-play">
+      <div class="heading font-istok-web fs-large">YOU</div>
+      <div id="btn-player" class="btn-container">
+        <div id="btn-Rock-player" class="btn btn-Rock-player"><img src="/images/icons8-fist-96.png" alt="Fist icon"></div>
+        <div id="btn-Paper-player" class="btn btn-Paper-player"><img src="/images/icons8-hand-96.png" alt="Hand icon" srcset=""></div>
+        <div id="btn-Scissors-player" class="btn btn-Scissors-player"><img src="/images/icons8-hand-peace-skin-type-1-96.png" alt="Hand Peace Icon"></div>
       </div>
       <div class="score-display">
-        <div class="score-label font-indie-flower font-24">Score:</div>
-        <div class="score-player font-istok-web font-40"></div>
+        <div class="score-label font-indie-flower fs-medium">Score:</div>
+        <div id="score-player" class="score-result font-istok-web fw-bold fs-large">0</div>
       </div>
     </div>
 
-    <div class="font-48 font-indie-flower">
+    <div class="fs-xxlarge font-indie-flower">
       VS
     </div>
 
-    <div class="comp">
-      <div class="head font-istok-web font-36">COMPUTER</div>
-      <div class="btn-comp">
-        <div class="btn btn-Rock-comp"><img src="/images/icons8-fist-96.png" alt="Fist icon"></div>
-        <div class="btn btn-Paper-comp"><img src="/images/icons8-hand-96.png" alt="Hand icon" srcset=""></div>
-        <div class="btn btn-Scissors-comp"><img src="/images/icons8-hand-peace-skin-type-1-96.png" alt="Hand Peace Icon"></div>
+    <div id="comp" class="game-play">
+      <div class="heading font-istok-web fs-large">COMPUTER</div>
+      <div id="btn-comp" class="btn-container">
+        <div id="btn-Rock-comp" class="btn btn-Rock-comp"><img src="/images/icons8-fist-96.png" alt="Fist icon"></div>
+        <div id="btn-Paper-comp" class="btn"><img src="/images/icons8-hand-96.png" alt="Hand icon" srcset=""></div>
+        <div id="btn-Scissors-comp" class="btn"><img src="/images/icons8-hand-peace-skin-type-1-96.png" alt="Hand Peace Icon"></div>
       </div>
       <div class="score-display">
-        <div class="score-label font-indie-flower font-24">Score:</div>
-        <div class="score-comp font-istok-web bold font-40"></div>
+        <div class="score-label font-indie-flower fs-medium">Score:</div>
+        <div id="score-comp" class="score-result font-istok-web fw-bold fs-large">0</div>
       </div>
     </div>
-
-    <div class="footer">
-      <div class="refer">All icons by icons8.</div>
-      <div class="icon-refer">
-        <div class="rock-icon">
-          <a target="_blank" href="https://icons8.com/icon/UU1CYnCFbv8C/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </div>
-        <div class="paper-icon">
-          <a target="_blank" href="https://icons8.com/icon/17678/hand">Hand</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </div>
-        <div class="scissors-icon">
-          <a target="_blank" href="https://icons8.com/icon/iiXapumwGdRX/hand-peace-skin-type-1">Hand Peace Skin Type 1</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </div>  
-      </div>
-      
-    </div>
-
   </div>
+
+  <div class="btns">
+  </div>
+
+  <div class="footer">
+    <div class="refer fs-xsmall fw-bold font-istok-web">All icons by icons8.</div>
+    <div class="icon-refer">
+      <div class="rock-icon font-indie-flower fs-xsmall">
+        <a target="_blank" href="https://icons8.com/icon/UU1CYnCFbv8C/fist">Fist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
+      <div class="paper-icon font-indie-flower fs-xsmall">
+        <a target="_blank" href="https://icons8.com/icon/17678/hand">Hand</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
+      <div class="scissors-icon font-indie-flower fs-xsmall">
+        <a target="_blank" href="https://icons8.com/icon/iiXapumwGdRX/hand-peace-skin-type-1">Hand Peace Skin Type 1</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>  
+    </div>
+    
+  </div>
+
 
   <script src="index.js"></script>
 
