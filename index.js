@@ -33,10 +33,15 @@ let playerScore = document.getElementById('score-player');
 let compScore = document.getElementById('score-comp');
 
 // ADDITIONAL BUTTONS
-let btnContainer = document.getElementById('btn-Container');
+let btnPopUp = document.getElementById('btn-popup');
 let btnResult = document.createElement('button');
 btnResult.textContent = "asdfasj";
-btnContainer.appendChild(btnResult);
+
+let btnRestart = document.createElement('button');
+btnRestart.textContent = "sdfwe";
+
+
+btnPopUp.append(btnResult, btnRestart);
 
 //TODO
 // configure buttons showing result and restart
