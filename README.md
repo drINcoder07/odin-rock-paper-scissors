@@ -1,10 +1,11 @@
 ### Project: Rock Paper Scissors
 
-Rock, Paper Scissors is a game very popular since I was in elementary.
+Rock, Paper Scissors is a game very popular since I was in elementary. The mechanics of the game is very simple: You have to beat the Computer by winning first in five scores.
 
-This time, I'm making it a game based on what I learned in HTML, CSS and JavaScript.
+#### PROGRESS
 
-#### Progress
+There's still some cleaning to do with my code but I'm satisfied with the simplicity of the UI design of the game. I will do some modification with the animations and add some details, but right now, I am glad that it does its purpose.
 
-- Start with necessary JavaScript Functions
-- Added break game when there are less chances to win already
+#### LIVE DEMO
+
+https://drincoder07.github.io/odin-rock-paper-scissors/
