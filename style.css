@@ -129,7 +129,7 @@ body {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 2em;
 }
 
 .score-display {
@@ -154,6 +154,10 @@ button {
   border: none;
   background: none;
   outline: none;
+}
+
+.btn {
+  font-size: 5rem;
 }
 
 .clicked {
@@ -201,5 +205,9 @@ button {
   .container {
     margin-top: 2em;
     justify-content: center;
+  }
+
+  .btn-container {
+    gap: 0;
   }
 }
